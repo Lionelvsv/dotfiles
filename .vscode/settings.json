@@ -1,0 +1,11 @@
+{
+    // Add these to your VS Code settings.json
+"editor.fontFamily": "'Fira Code', Consolas, monospace",
+"editor.fontLigatures": true,
+"editor.fontSize": 16,
+// "vscode_custom_css.imports": [""],
+"vscode_custom_css.policy": true,
+"vscode_custom_css.imports": [
+    "file:///Users/lionelvsv/dotfiles/vscode/styles.css" // styles.css in this gist.
+],
+}
