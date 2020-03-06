@@ -1,41 +1,30 @@
-Host github.com
+Host *
+  UseKeychain yes
+
+
+#gitlab account
+Host gitlab.com-mb10
+	HostName gitlab.com
+	User git
+	IdentityFile ~/.ssh/id_rsa_wagstays
+
+#bitbucket account
+Host bitbucket.org-wagstays
+	HostName bitbucket.org
+	User git
+	IdentityFile ~/.ssh/id_rsa_wagstays
+
+
+
+ #gitlab account
+ Host gitlab.com-lionelvsv
+     HostName gitlab.com
+     User git
+     IdentityFile ~/.ssh/id_rsa_lionel
+
+
+#github account
+Host github.com-lionelvsv
     HostName github.com
-    User git
-    IdentityFile ~/.ssh/id_rsa
-
-Host bitbucket.org
-    HostName bitbucket.org
-    User git
-    IdentityFile ~/.ssh/id_rsa
-
-Host gitlab.com
-    HostName gitlab.com
-    User git
-    IdentityFile ~/.ssh/id_rsa
-
-
-
-Host heroku.com
-  HostName heroku.com
-  IdentityFile ~/.ssh/id_rsa_vishal_wagstays
-  IdentitiesOnly yes
-
-Host bitbucket-wagstays.org
-    HostName bitbucket-wagstays.org
-    User git
-    IdentityFile ~/.ssh/id_rsa_vishal_wagstays
-
-Host gitlab-wagstays.com
-    HostName gitlab-wagstays.com
-    User git
-    IdentityFile ~/.ssh/id_rsa_vishal_wagstays
-
-
-
-#  when  addding remote add  git@bitbucket-wagstays:wagstays/platform
-
-#  use this  for individula repo 
-
-
-# git config user.name "Your Name Here"
-# git config user.email your@email.com
+    User  git
+    IdentityFile ~/.ssh/id_rsa_lionel

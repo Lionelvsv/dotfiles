@@ -64,9 +64,6 @@ brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
 
-# Install some CTF tools; see https://github.com/ctfs/write-ups.
-brew install aircrack-ng
-
 # Install other useful binaries.
 brew install ack
 
@@ -103,19 +100,32 @@ heroku update
 brew cask install --appdir="/Applications" alfred
 brew cask install --appdir="~/Applications" iterm2
 brew cask install --appdir="~/Applications" xquartz
+brew cask install --appdir="/Applications" karabiner-elements
 
 # Development tool casks
 brew cask install --appdir="/Applications" sublime-text
 brew cask install --appdir="/Applications" atom
 brew cask install --appdir="/Applications" virtualbox
-brew cask install --appdir="/Applications" vagrant
 brew cask install --appdir="/Applications" macdown
+brew cask install --appdir="/Applications" hyper
+brew cask install --appdir="/Applications" android-studio
+brew cask install --appdir="/Applications" notion
+brew cask install --appdir="/Applications" postman
+brew cask install --appdir="/Applications" node
+brew cask install --appdir="/Applications" java
+# brew cask install --appdir="/Applications" vagrant
 
 # Misc casks
 brew cask install --appdir="/Applications" google-chrome
 brew cask install --appdir="/Applications" firefox
 brew cask install --appdir="/Applications" slack
-brew cask install --appdir="/Applications" dropbox
+brew cask install --appdir="/Applications" opera
+brew cask install --appdir="/Applications" transmit
+brew cask install --appdir="/Applications" spotify
+brew cask install --appdir="/Applications" microsoft-edge
+brew cask install --appdir="/Applications" vlc
+brew cask install --appdir="/Applications" the-unarchiver
+brew cask install --appdir="/Applications" firefox-developer-edition
 
 # Install Docker, which requires virtualbox
 brew install docker

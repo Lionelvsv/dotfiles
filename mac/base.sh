@@ -4,9 +4,9 @@ ssh-keygen -t rsa -C "lionelvsv@gmail.com"
 echo "Please add this public key to Github \n"
 echo "https://github.com/account/ssh \n"
 
-echo "key name  should be  /Users/lionelvsv/.ssh/id_rsa"
+echo "key name  should be  /Users/lionelvsv/.ssh/id_rsa_lionel"
 echo "add the  key  to  ssh  in  seperate window"
-echo "ssh-add ~/.ssh/id_rsa"
+echo "ssh-add ~/.ssh/id_rsa_lionel"
 read -p "Press [Enter] key after this..."
 
 eval "$(ssh-agent -s)"
@@ -18,14 +18,14 @@ ssh-keygen -t rsa -C "vishal@wagstays.com"
 echo "Please add this public key to Github \n"
 echo "https://github.com/account/ssh \n"
 
-echo "key name  should be  /Users/lionelvsv/.ssh/id_rsa_vishal_wagstays"
+echo "key name  should be  /Users/lionelvsv/.ssh/id_rsa_wagstays"
 echo "add the  key  to  ssh  in  seperate window"
-echo "ssh-add ~/.ssh/id_rsa_lionel_wagstays"
+echo "ssh-add ~/.ssh/id_rsa_wagstays"
 read -p "Press [Enter] key after this..."
 
 
-cd 
-mv config ~/.ssh 
+cd
+cp config ~/.ssh
 
 echo ""
 echo "------------------------------"
@@ -75,7 +75,7 @@ git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 
 
 
-#  install fira code 
+#  install fira code
 
 brew tap homebrew/cask-fonts
 brew cask install font-fira-code
@@ -88,8 +88,35 @@ cd ..
 
 # install unarchiver
 
-brew cask install the-unarchiver
+# brew cask install the-unarchiver
+
+
+
+brew install  nvm
+
+
+
+./npm.sh
 
 
 echo "Cleaning up brew"
 brew cleanup
+
+
+
+# Install the Solarized Dark theme for iTerm
+open "./Dracula.itermcolors"
+
+# Don’t display the annoying prompt when quitting iTerm
+defaults write com.googlecode.iterm2 PromptOnQuit -bool false
+
+
+# karabiner settings
+echo -n "linking karabiner settings"
+ln -s $HOME/dotfiles/karabiner ~/.config/karabiner
+echo "done"
+
+
+ln -s $HOME/dotfiles/.zshrc ~/.config/.zshrc
+# Reload zsh settings
+source ~/.zshrc
